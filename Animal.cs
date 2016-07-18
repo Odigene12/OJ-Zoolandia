@@ -11,9 +11,16 @@ namespace Zoolandia
         }
         public String Name {get; set;}
 
-        public virtual string Eat(int numberOfFoodz)
+        public string Weight {get; set;}
+
+        public virtual string SpecAbility()
         {
-            return "YUM!";
+            return "Mach Speed";
+        }
+
+        public virtual string Evolution()
+        {
+            return "No Evolution";
         }
     }
 }

@@ -8,11 +8,15 @@ namespace Zoolandia.Species
         {
             // don't need to do "This.name = name"
         }
-        public override string Eat(int numberOfFoodz)
+        public override string SpecAbility()
         {
             // base will call the parent class
-            string animalEat = base.Eat(3);
-            return "Nom nom nom";
+            return "Flamethrower";
+        }
+
+        public override string Evolution()
+        {
+            return "Mega Red Panda";
         }
 
         public string Eat(){
