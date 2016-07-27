@@ -2,7 +2,7 @@ using System;
 
 namespace Zoolandia
 {
-    public class Animal
+    public abstract class Animal
     {
         // This is a contructor for the Animal class
         public Animal (string name)
@@ -11,7 +11,7 @@ namespace Zoolandia
         }
         public String Name {get; set;}
 
-        public string Weight {get; set;}
+        public int Weight {get; set;}
 
         public virtual string SpecAbility()
         {
@@ -21,6 +21,12 @@ namespace Zoolandia
         public virtual string Evolution()
         {
             return "No Evolution";
+        }
+
+        public virtual string Eat(int numberOfFoodz)
+
+        {
+            return "Yum";
         }
     }
 }

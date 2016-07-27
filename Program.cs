@@ -8,6 +8,8 @@ namespace Zoolandia
         public static void Main(string[] args)
         {
             Console.WriteLine("Hello World!");
+
+            
             
             AilurusFulgens redPanda = new AilurusFulgens("Steve");
             redPanda.Name = "Steve";
@@ -21,7 +23,17 @@ namespace Zoolandia
             Console.WriteLine(Joe.Welcome());
             Console.WriteLine(Joe.Name);
 
-            Console.ReadLine();
+
+            PantheraLeo firePokemon = new PantheraLeo("Arcanine");
+            firePokemon.Name = "Arcanine";
+            Console.WriteLine(firePokemon.Name + " used " + firePokemon.SpecAbility());
+
+            CanisLupus wolfPokemon = new CanisLupus("Garurumon");
+            wolfPokemon.Name = "Garurumon";
+            wolfPokemon.Weight = 300;
+            Console.WriteLine("A " + wolfPokemon.Weight + " pound " +  wolfPokemon.Name + " used " + wolfPokemon.SpecAbility());
+            Console.WriteLine(firePokemon.Name + firePokemon.SmackDat(7) + firePokemon.SmackDat());
+
         }
     }
 }
