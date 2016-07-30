@@ -8,7 +8,10 @@ namespace Zoolandia.ZoolandiaPart4
 
             public int HeightInFeet {get; set;}
 
-            public int NumberOfLegs {get; set;}
+            public virtual int NumberOfLegs()
+            {
+                return 4;
+            }
 
             public virtual string SpecialAbility()
                 {
